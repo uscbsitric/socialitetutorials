@@ -35,4 +35,8 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'facebook' => ['client_id' => '118871828736493',
+                   'client_secret' => '5f23c9c5ea49f03d839db636d9789359',
+                   'redirect' => ''
+                  ];
 ];
