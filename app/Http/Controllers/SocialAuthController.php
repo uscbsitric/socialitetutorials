@@ -24,8 +24,8 @@ class SocialAuthController extends Controller
 
     session(["facebookUser" => $facebookUser]);
 
-    //Auth::login($user); //not sure if this works
-    Auth::loginUsingId($user->id);
+    Auth::login($user); //not sure if this works
+    //Auth::loginUsingId($user->id);
 
    return redirect()->to('home');
   }
