@@ -14,7 +14,7 @@ class SocialAccountService
 
     if($account)
     {
-      return $account->user
+      return $account->user;
     }
     else
     {
@@ -38,5 +38,6 @@ class SocialAccountService
 
       return $user;
     }
+
   }
 }
