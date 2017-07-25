@@ -16,10 +16,10 @@ class GithubLoginController extends Controller
 
     function githubCallback(SocialAccountService $socialAccountService)
     {
-      $facebookUser = Socialite::driver('github')->user();
-      session(['facebookUser' => $facebookUser]);
+      $githubUser = Socialite::driver('github')->user();
+      session(['githubUser' => $githubUser]);
 
-      $user = $socialAccountService->createOrGetUser($facebookUser);
+      $user = $socialAccountService->createOrGetUser($githubUser);
 
       Auth::login($user);
 

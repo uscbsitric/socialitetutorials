@@ -23,6 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $githubUser = session("githubUser");
+        return view('home')->with(["githubUser" => $githubUser]);
     }
 }

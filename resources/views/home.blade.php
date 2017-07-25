@@ -9,6 +9,9 @@
 
                 <div class="panel-body">
                     You are logged in!
+                    @isset( $githubUser )
+                      {{ dd( $githubUser ) }}
+                    @endisset
                 </div>
             </div>
         </div>
