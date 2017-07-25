@@ -35,4 +35,8 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'github' => ['client_id'     => 'e3062e3e55f399b526f0',
+                 'client_secret' => '2f0d2e43f12fb06e19ffee5a3e610c3ce05a741c',
+                 'redirect'      => 'http://socialitetutorials.local/githubcallback'
+                ]
 ];
