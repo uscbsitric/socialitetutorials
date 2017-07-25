@@ -11,8 +11,9 @@
                     You are logged in!
                     <p>
                       <h1 style="font-size: 25 !important">
-                      dataForUserAboutMe: User.user_about_me
-                      dataForZZZZZZZZZZZ: User.zzzz_zzzzz_zz
+                      @isset($facebookDetails)
+                        {{ dd($facebookDetails) }}
+                      @endisset
                       </h1>
                     </p>
                 </div>

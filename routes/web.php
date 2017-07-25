@@ -19,5 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/redirect', 'SocialAuthController@redirect')->name('facebookRedirect');
-Route::get('/callback', 'SocialAuthController@callback')->name('facebookCallback');
+Route::get('/redirect', 'SocialAuthController@redirect')->name('facebookRedirect')->middleware(['web']);
+Route::get('/callback', 'SocialAuthController@callback')->name('facebookCallback')->middleware(['web']);
